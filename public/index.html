@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Chess</title>
+  <link rel="stylesheet" href="css/chessboard-0.3.0.css" />
+  <style type="text/css">
+    .green {
+      -webkit-box-shadow: inset 0 0 3px 3px green;
+      -moz-box-shadow: inset 0 0 3px 3px green;
+      box-shadow: inset 0 0 3px 3px green;  
+    }
+    .blue {
+      -webkit-box-shadow: inset 0 0 3px 3px blue;
+      -moz-box-shadow: inset 0 0 3px 3px blue;
+      box-shadow: inset 0 0 3px 3px blue;  
+    }
+</style>
+</head>
+<body>
+  <div id="board" style="width: 400px; margin-bottom: 20px"></div>
+  <div id="infoPanel" style="margin-bottom: 20px; visibility: hidden"></div>
+  <div id="inputPanel" style="visibility: hidden;">
+    <input type="button" id="NoResponseAnswer" value="It's nothing. Let's go"><input>
+  </div>
+  <div>
+    <input type="button" id="SwitchSidesBtn" value="Switch Sides"></input>
+    <input type="button" id="UndoBtn" value="Undo"></input>
+  </div>
+  <div>
+    <label for="fen">FEN:</label> <input type="text" id="fen" style="width:80%"></input>
+    <input type="button" id="SetPosBtn" value="Set"></input>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.2/chess.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/chessboard-0.3.0.js"></script>
+  <script type="text/javascript" src="js/game-utils.js"></script>
+  <script type="text/javascript" src="js/ui.js"></script>
+  <script type="text/javascript" src="js/state-machine.min.js"></script>
+  <script type="text/javascript" src="js/checklist.js"></script>
+</body>
+</html>
